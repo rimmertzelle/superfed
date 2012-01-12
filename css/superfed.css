@@ -1,0 +1,188 @@
+body{
+	line-height:2em;
+	font-size:1em;
+	font-family:Verdana;
+	border-top:5px solid #6a4837;
+}
+
+h1, h2, h3, h5{
+	font-family: 'Special Elite', cursive;	
+}
+h1{
+	color:#ff4800;
+	font-size:7em;
+	margin:50px 0;
+	font-family: 'Montez', cursive;
+}
+
+h2, h3, h5{
+	font-size:1.4em;
+	color:#ff4800;
+}
+
+h3{
+	margin:20px 0px 5px 0px;
+}
+
+h4{
+	font-size:1.2em;
+	background-color:#6a4837;
+	height:50px;
+	padding: 5px;
+	color:#FFF;
+}
+
+h5{
+	color:#00BFFD;
+	margin-bottom:20px;
+}
+
+h6{
+	color:#00BFFD;
+	margin-top:20px;
+}
+
+strong{
+	font-weight:bold;
+}
+
+a{
+	text-decoration:none;
+	color:#ff4800;
+}
+
+a:hover{
+	color:#6a4837;
+}
+
+#nav{
+	background-color:#6a4837;
+}
+
+#intro{
+	
+}
+
+#main{
+	background-color:#FFF;
+}
+
+ol{
+	margin-left:30px;
+	list-style-type:decimal;
+}
+
+ul>li{
+	list-style-type:disc;
+	margin-left:20px;
+}
+
+.content{
+	width:960px;
+	margin:0 auto;
+}
+
+#nav ul>li{
+	text-decoration:none;
+	display:inline-block;
+	padding:5px;
+	color:#FFF;
+}
+
+#intro{
+	background-color:#e4cdac;
+	padding:20px 5px;
+	line-height:2em;
+	border-bottom: 5px solid #eee5e0;
+}
+
+#intro .intro-left{
+	float:left;
+	width:45%;
+	padding:5px;
+	
+}
+
+.intro-left p{
+	padding-top:20px;
+}
+
+#intro .intro-rght{
+	margin-top:20px;
+	float:right;
+	width:40%;
+	padding:15px;
+	background-color:#fff;
+	border: 5px solid #eee5e0;
+	
+}
+
+.intro-rght ul{
+	margin-top:10px;
+}
+
+.intro-rght strong{
+	color:#6a4837;
+}
+
+.topic{
+	width:23%;
+	float:left;
+	margin-top:30px;
+	margin-right:5px;
+	padding:5px;
+	line-height:2em;
+	font-size:0.8em;
+	height:320px;
+	background-color:#eee5e0;
+}
+
+.topic p{
+	padding:5px;
+}
+
+.banner{
+	font-family: 'Special Elite', cursive;	float:right;
+	font-size:1.4em;
+	color:#FFF;
+	background-color:#00bffd;
+	/*border:1px solid #ff4800;*/
+	padding:5px 15px;
+	vertical-align:center;
+	-webkit-border-radius:5px;	
+	-moz-border-radius:5px;	
+	border-radius:5px;
+	-webkit-transform: scale(1.5) rotate(-10deg); 
+	-moz-transform: scale(1.5) rotate(-10deg); 
+	-o-transform: scale(1.5) rotate(-10deg); 
+	transform: scale(1.5) rotate(-10deg);
+}
+
+.clear{
+	clear:both;
+}
+
+#twitter{
+	margin-top:20px;
+	float:right;
+	width:40%;
+	padding:15px;
+	background-color:#eee5e0;
+	border: 5px solid #eee5e0;
+}
+
+#tweet{
+	font-size:0.8em;
+}
+
+#tweet ul>li{
+	list-style:none;
+}
+
+#tweet ul>li>a:nth-child(3){
+	color:#FFF;
+}
+
+.warning{
+	color:red;
+}
