@@ -171,16 +171,12 @@ ul>li{
 	border: 5px solid #eee5e0;
 }
 
-#tweet{
-	font-size:0.8em;
+.twtr-ft div { 
+	display:none;
 }
 
-#tweet ul>li{
-	list-style:none;
-}
-
-#tweet ul>li>a:nth-child(3){
-	color:#FFF;
+.twtr-widget h4 {
+	height: 10px;
 }
 
 .warning{
