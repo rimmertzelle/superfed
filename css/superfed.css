@@ -182,3 +182,8 @@ ul>li{
 .warning{
 	color:red;
 }
+
+/** Responsive web - media queries **/
+@media screen and (min-width: 980px) {
+	
+}
