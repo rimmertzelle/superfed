@@ -8,17 +8,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css' />
 		<link rel='stylesheet' href='css/reset.css' />
 		<link rel='stylesheet' href='css/superfed.css' />
-		<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
-		<script type="text/javascript" charset="utf-8">
-		getTwitters('tweet', { 
-		  id: '_superfed', 
-		  count: 4, 
-		  enableLinks: true, 
-		  ignoreReplies: true, 
-		  clearContents: true,
-		  template: '"%text%" <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/">%time%</a>'
-		});
-		</script>
+		
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
@@ -67,11 +59,39 @@
 			<div class='content'>
 					<div id='twitter'>
 						<h5>Twitter activiteit @_superfed</h5>
-						<div id="tweet">
-				 			<p>Please wait while my tweets load <img src="img/ajax-loader.gif" /></p>
-				 			<p><a href="http://twitter.com/_superfed">If you can't wait - check out what I've been twittering</a></p>
+						<div id="tweets">
+							<script>
+								new TWTR.Widget({
+								  version: 2,
+								  type: 'search',
+								  search: '@_superfed OR #jsframe OR #jsoop OR #respweb OR #qsuperfed',
+								  interval: 30000,
+								  title: 'Front-end developement via',
+								  subject: '@_Superfed',
+								  width: 'auto',
+								  height: 300,
+								  theme: {
+								    shell: {
+								      background: '#eee5e0',
+								      color: '#000000'
+								    },
+								    tweets: {
+								      background: '#eee5e0',
+								      color: '#000000',
+								      links: '#ff4800'
+								    }
+								  },
+								  features: {
+								    scrollbar: false,
+								    loop: false,
+								    live: false,
+								    behavior: 'all'
+								  }
+								}).render().start();
+							</script>
+						</div>
 					</div>
-					</div>
+
 				<h3>Wat kan ik doen?</h3>
 				<ol>
 					<li>Volg @_superfed op twitter</li>
@@ -88,7 +108,8 @@
 					<li>Links naar online <strong>college materiaal</strong></li>
 				</ul>
 				<h3>Thema's</h3>
-				<p>De volgende thema's hebben we al gekozen. De thema's kunnen uiteraard uitgebreid of aangevuld worden. Daarbij hebben we ook een minimale invulling voor de thema's al gegeven. Concrete links naar bronnen staan ook al op twitter via _superfed</p>		
+				<p>De volgende thema's hebben we al gekozen. De thema's kunnen uiteraard uitgebreid of aangevuld worden. Daarbij hebben we ook een minimale invulling voor de thema's al gegeven. Concrete links naar bronnen staan ook al op twitter via _superfed</p>
+				<div class="clear"></div>
 				<div class='topic'>
 					<h4>HTML5 en CSS3</h4>
 					<p><strong>De basis voor nieuwe ontwikkelingen binnen het domein van frontend development.</strong></p> 
